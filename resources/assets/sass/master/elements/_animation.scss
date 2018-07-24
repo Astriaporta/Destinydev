@@ -1,0 +1,71 @@
+@keyframes fadeIn {
+  0%: {opacity: 0;}
+  100%: {opacity: 1;}
+}
+@keyframes fadeInUp {
+  0%: {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100%: {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  0%: {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100%: {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownUp {
+	to { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownCenter {
+	to { opacity: 0; transform: scale(.7); }
+}
+
+@keyframes scaleUpCenter {
+	from { opacity: 0; transform: scale(.7); }
+}
+
+.page-scaleDown {
+	animation: scaleDown .7s ease both;
+}
+
+.page-scaleUp {
+	animation: scaleUp .7s ease both;
+}
+
+.page-scaleUpDown {
+	animation: scaleUpDown .5s ease both;
+}
+
+.page-scaleDownUp {
+	animation: scaleDownUp .5s ease both;
+}
+
+.page-scaleDownCenter {
+	animation: scaleDownCenter .4s ease-in both;
+}
+
+.page-scaleUpCenter {
+	animation: scaleUpCenter .4s ease-out both;
+}

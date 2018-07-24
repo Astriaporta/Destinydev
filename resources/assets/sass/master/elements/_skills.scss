@@ -1,0 +1,24 @@
+.skills-bar {
+  width: $fullScreen;
+  background-color: $grey;
+  .skill {
+    text-align: right;
+    padding-right: $size-base;
+    line-height: ($size-base * 2);
+    color: $ice;
+    &::before {
+      color: $ice;
+      mix-blend-mode: difference;
+    }
+    &::after {
+      color: $ice;
+      mix-blend-mode: difference;
+    }
+    @each $name, $color in $skills-color {
+      &.#{$name} {
+        //width: $width;
+        background-color: #{$color};
+      }
+    }
+  }
+}

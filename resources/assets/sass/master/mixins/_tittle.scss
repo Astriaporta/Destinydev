@@ -1,0 +1,12 @@
+@mixin make-tittle($left, $top, $right, $bottom) {
+  display: block;
+  //font-size: $font-size;
+  margin: 0;
+  padding: {
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+  }
+  font-weight: bold;
+}

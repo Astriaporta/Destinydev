@@ -1,0 +1,30 @@
+.form-input {
+  display: block;
+  width: $fullScreen;
+  color: $feldgrau;
+  background: {
+    color: $ice;
+    clip: padding-box;
+  }
+  border: 1px solid $grey;
+  @include input-size($padding-input-y, $padding-input-x, $size-small, $line-height-base, $border-radius);
+  @include transition($btn-transition);
+
+  &::placeholder {
+    color: $input-placeholder-color;
+    opacity: 1;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: $fullScreen;
+  >.form-control {
+    position: relative;
+    flex: $one $one auto;
+    width: 1%;
+    margin-bottom: $none;
+  }
+}

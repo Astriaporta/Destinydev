@@ -1,0 +1,10 @@
+h {
+  @each $number, $length in $sizes {
+    &#{$number} { @include make-tittle(0, $length, 0, $length); }
+  }
+}
+h {
+  @each $number, $length in $tittle-size {
+    &#{$number} { font-size: $length;}
+  }
+}

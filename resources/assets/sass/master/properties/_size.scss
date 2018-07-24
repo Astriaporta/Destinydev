@@ -1,0 +1,17 @@
+.width {
+  &-x-large {width: $size-x-large;}
+  &-100prc {width: $fullScreen}
+  &-zero {width: $none}
+}
+.height {
+  &-x-large {height: $size-x-large;}
+  &-100prc {height: $fullScreen}
+  &-zero {height: $none}
+}
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $size, $length in $sizes-grid {
+    .#{$abbrev}-#{$size} { #{$prop}: $length; }
+  }
+}
+.mw-100 { max-width: 100%; }
+.mh-100 { max-height: 100%; }

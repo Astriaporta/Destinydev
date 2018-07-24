@@ -1,0 +1,22 @@
+.has-error {
+  @extend .border-color-bittersweet;
+}
+.messages {
+  position: relative;
+  margin-top: $message-margin-top;
+  margin-bottom: $message-margin-bottom;
+  @include input-size($message-padding-y, $message-padding-x, $size-small, $line-height-base, $message-border-radius);
+
+  @if $enable-shadows {
+    box-shadow: $shadow;
+  }
+  @each $name, $color in $messages-list {
+    &.#{$name} {
+      background-color: #{$color};
+      color: color-level($messages-list, $name, $message-color-level);
+      @if $enable-message-border {
+        border: 1px solid color-level($messages-list, $name, $message-border-color-level);
+      }
+    }
+  }
+}

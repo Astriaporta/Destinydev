@@ -1,0 +1,84 @@
+@media screen and (max-width: 1200px), (min-width: 769px) {
+  .container {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-title {font-size: 4rem;}
+  #services {
+    .d-flex {flex-wrap: wrap;}
+  }
+  .captcha {
+    width: 100%;
+    #captchaView {
+      flex-grow: 3;
+      img {
+        width: 100%;
+      }
+    }
+    #captchaRefresh {
+      flex-grow: 1;
+      i {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .sidenav {
+    padding-top: $size-small;
+    &.is-open {
+      width: $fullScreen;
+    }
+    .navbar {
+      .nav {
+        a { font-size: $size-large-small;}
+      }
+    }
+  }
+  #main {
+    &.is-open {
+      margin-left: 0;
+    }
+  }
+  .hamburger {
+    width: $hamburger-size-phone-width;
+    height: $hamburger-size-phone-height;
+  }
+  .hamb-top,
+  .hamb-middle,
+  .hamb-bottom {
+    height: $hamburger-part-size-phone-height;
+  }
+  .social {
+    margin-bottom: 1.5rem;
+    li {
+      line-height: 1.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      a {
+        font-size: $size-small;
+      }
+    }
+  }
+  .btn-lg {
+    padding: $size-small $size-large-small;
+    font-size: $size-small;
+  }
+  .card {
+    padding: {
+      left: 3rem;
+      right: 3rem;
+    }
+  }
+  .header {
+    &-lead {font-size: 2rem}
+    &-title {font-size: 3rem}
+  }
+  .connection,
+  .take-contact,
+  .container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  section {min-height: $fullScreen}
+}

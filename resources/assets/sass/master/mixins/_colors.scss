@@ -1,0 +1,12 @@
+@mixin colors($prop) {
+  @each $color, $value in $colors {
+    &-#{$color} {#{$prop}: $value;}
+  }
+}
+@function color-level($list-color, $color-name: "bleue-de-france", $level: 0) {
+  $color: layer($list-color, $color-name);
+  $color-base: if($level > 0, $charcoal, $ice);
+  $level: abs($level);
+
+  @return mix($color-base, $color, $level * $color-interval);
+}

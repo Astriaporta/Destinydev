@@ -1,0 +1,27 @@
+.social {
+  li {
+    line-height: $size-x-large;
+    height: $size-x-large;
+    width: $size-x-large;
+    @include transition-transform($halfSecond);
+    @include rotate($northEast);
+    @extend .d-block;
+    @extend .text-center;
+    @extend .bg-ice;
+    @if $enable-shadows {
+      @extend .shadow-light;
+    }
+    &:hover {
+      @include scale-rotate(1.3,1.3, $northEast);
+    }
+  }
+  a {
+    font-size: $size-base;
+    @extend .d-block;
+    @extend .text-center;
+    @include rotate($northWest);
+    @extend .width-x-large;
+    @extend .height-x-large;
+    @extend .c-charcoal;
+  }
+}

@@ -1,0 +1,31 @@
+.bg {
+  @include colors(background-color);
+}
+.backgroung-img {
+  position: relative;
+  background: {
+    image: url(/public/images/PIA08093-orig.jpg);/* source: https://images-assets.nasa.gov/image/PIA08093/PIA08093~orig.jpg */
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+    color: $ice;
+  }
+  overflow: hidden;
+  height: $fullScreen;
+}
+.bg-home {
+  background: {
+    //image: linear-gradient(to left, $php, $vuejs);
+    image: radial-gradient(circle at center, $vuejs, $php);
+    //image: radial-gradient(circle at center,#045,#002);
+    attachment: fixed;
+  }
+  @extend .c-ice;
+}
+.transparent {
+  height: $fullScreen;
+  @extend .c-ice;
+  //@extend .bg-charcoal;
+  //@include linear-gradient($south, 16, 25, 32, 0.38, 0, 0, 0, 0.5);
+}
+.bg-primary {@extend .bg-bleue-de-france;}

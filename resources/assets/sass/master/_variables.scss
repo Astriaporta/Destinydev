@@ -1,0 +1,255 @@
+// sizes
+$size-very-x-large: 5rem;
+$size-x-large: 4rem;
+$size-large: 2.75rem;
+$size-large-small: 2rem;
+$size-base: 1.5rem;
+$size-base-small: 1.25rem;
+$size-small: 1rem;
+$size-x-small: 0.6875rem;
+$size-very-x-small: 0.5rem;
+$fullScreen: 100%;
+$halfScreen: ($fullScreen/2);
+
+$border-base: 1px;
+
+$fivePix: ($border-base*5);
+$tooPix: ($border-base*2);
+
+$padding-input-x: .375rem;
+$padding-input-y: .75rem;
+
+$line-height-base: 1.5;
+
+$sizes : (
+  0: 0,
+  1: ($size-small * .25),
+  2: ($size-small * .5),
+  3: $size-small,
+  4: ($size-small * 1.5),
+  5: ($size-small * 3),
+  auto: auto
+);
+
+$sizes-grid: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$header-size: (
+  1: $size-x-large,
+  2: $size-large,
+  3: $size-base,
+  4: $size-small,
+);
+
+$tittle-size: (
+  1: ($size-small * 2.5),
+  2: ($size-small * 2),
+  3: ($size-small * 1.75),
+  4: ($size-small * 1.5),
+  5: ($size-small * 1.25),
+  6: $size-small
+);
+
+// Color
+$apple-green: #96BB00;
+$bittersweet: #FF715B;
+$bleue-de-france: #3C91E6;
+$yellow-js: #f7df1e;
+$ice: #FAFFFD;
+$grey: #E1E2E3;
+$light-grey: #F1F1F1;
+$feldgrau: #4C5B5C;
+$charcoal: #1C2222;
+$vuejs: #4FC08D;
+$sass: #C6538C;
+$javascript: #ff9800;
+$php: #8892BF;
+
+// Spaces
+$space-types: (
+  margin: m,
+  padding: p
+);
+
+// Directions
+
+$directions: (
+  top: t,
+  left: l,
+  right: r,
+  bottom: b
+);
+// Display
+$display: (
+  0: none,
+  1: block,
+  2: flex,
+  3: inline,
+  4: inline-block
+);
+
+$justify-content: (
+  center: center,
+  between: space-between,
+  around: space-around,
+  start: flex-start,
+  end: flex-end
+);
+
+// Border
+$border-radius: .25rem;
+
+// Button
+$btn-disabled-opacity: .65;
+$btn-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+$btn-active-box-shadow: inset 0 3px 5px rgba($charcoal, .125);
+$btn-active-box-shadow: inset 0 3px 5px rgba($charcoal, .125);
+
+// Color
+$component-active-bg: $bleue-de-france;
+
+$colors: (
+  apple-green: $apple-green,
+  bittersweet: $bittersweet,
+  bleue-de-france: $bleue-de-france,
+  yellow-js: $yellow-js,
+  ice: $ice,
+  grey: $grey,
+  light-grey: $light-grey,
+  feldgrau: $feldgrau,
+  charcoal: $charcoal,
+  vuejs: $vuejs,
+  sass: $sass,
+  javascript: $javascript,
+  php: $php,
+  transparent: transparent,
+  init: inherit
+);
+$color-interval: 8%;
+
+// icon size
+$icon-x-large: $size-x-large;
+$icon-large: $size-large;
+$icon-base: $size-base;
+$icon-small: $size-small;
+
+// Fonts
+$main-fonts: 'Roboto', sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-size-lg: ($size-small * 1.25);
+$font-size-sm: ($size-small * .875);
+
+// Hamburger
+$hamburger-size-phone-height: 8vmin;
+$hamburger-size-phone-width: 8vmin;
+$hamburger-part-size-phone-height: .8vmin;
+
+$hambs: (
+  0: top,
+  1: middle,
+  2: bottom
+);
+
+// Input
+$input-btn-padding-y: .375rem;
+$input-btn-padding-x: .75rem;
+
+$input-btn-focus-width: .2rem;
+$input-btn-focus-color: rgba($component-active-bg, .25);
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$input-btn-padding-y-lg: .5rem;
+$input-btn-padding-x-lg: 1rem;
+
+$input-btn-padding-y-sm: .25rem;
+$input-btn-padding-x-sm: .5rem;
+
+$input-placeholder-color: $feldgrau;
+
+// Messages
+$messages-list: (
+  info: $bleue-de-france,
+  warning: $javascript,
+  success: $apple-green,
+  error: $bittersweet
+);
+
+$message-margin-top: 1rem;
+$message-margin-bottom: 1rem;
+$message-padding-y: $padding-input-y;
+$message-padding-x: 1.25rem;
+
+$message-border-radius: .25rem;
+$message-border: 1px solid $ice;
+$message-border-inverted: 1px solid $charcoal;
+
+$message-color-level: 9;
+$message-border-color-level: -9;
+
+// Rotations
+$northEast: 45deg;
+$northWest: -45deg;
+$east: 90deg;
+$south: 180deg;
+
+// Shadow
+
+$shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+$shadow-bottom: 0 2px 5px rgba(0,0,0,.26);
+$shadow-light: 0 0 $size-base-small $feldgrau;
+
+// Skills
+$skills-color: (
+  html: $apple-green,
+  css: $bleue-de-france,
+  vuejs: $vuejs,
+  sass: $sass,
+  javascript: $javascript,
+  php: $php,
+  laravel: $bittersweet
+);
+
+// Text
+$text-align: (
+  1: left,
+  2: right,
+  3: center,
+  4: justify
+);
+
+// Times
+$second: 1s;
+$halfSecond: ($second/2);
+$quarterSecond: ($second/4);
+
+// Transition
+$transition-base: all .2s ease-in-out;
+$transition-fade: opacity .15s linear;
+$transition-collapse: height .35s ease;
+
+// Options
+$enable-rounded: false;
+$enable-transitions: true;
+$enable-shadows: false;
+$enable-message-border: true;
+
+// Other
+$plus: '\02795'; // Unicode character for "plus" sign (+)
+$minus: '\2796'; // Unicode character for "minus" sign (-)
+$none: 0;
+$one: 1;

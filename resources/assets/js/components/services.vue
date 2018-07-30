@@ -27,7 +27,7 @@ export default {
         first: [
           { text: 'Réalisation de projets sur-mesure', bg: 'bg-bittersweet', icon: 'fa-pencil-ruler'},
           { text: 'Adaptation pour une utilisation agréable', bg: 'bg-sass', icon: 'fa-hand-point-up'},
-          { text: 'Choix de solutions technologiques adapté à vos besoin et ceux des vos utilisateurs', bg: 'bg-javascript', icon: 'fa-map-signs'}
+          { text: 'Choix de solutions technologiques adaptées à vos besoins et ceux des vos utilisateurs', bg: 'bg-javascript', icon: 'fa-map-signs'}
         ],
         two: [
           { text: 'Simplicité visuelle et confort d\'utilisation', bg: 'bg-bleue-de-france', icon: 'fa-eye'},

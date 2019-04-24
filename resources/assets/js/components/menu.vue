@@ -10,6 +10,7 @@
       </div>
     </div>
     <button class="hamburger"
+    name="menu"
     :class="{'is-open':isOpen, 'is-closed': !isOpen}" @click="isOpen = !isOpen">
       <span class="hamb-top"></span>
       <span class="hamb-middle"></span>

@@ -175,6 +175,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Menu',
@@ -227,6 +228,7 @@ var render = function() {
       {
         staticClass: "hamburger",
         class: { "is-open": _vm.isOpen, "is-closed": !_vm.isOpen },
+        attrs: { name: "menu" },
         on: {
           click: function($event) {
             _vm.isOpen = !_vm.isOpen

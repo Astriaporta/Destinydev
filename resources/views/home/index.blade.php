@@ -18,7 +18,7 @@
     <div class="text-center">
       En savoir plus
       <h2 class="mb-2">
-        <a href="#services" class="see-more">
+        <a href="#services" class="see-more" aria-label="En savoir plus">
           <i class="fa fa-angle-down"></i>
         </a>
       </h2>

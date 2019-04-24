@@ -1,0 +1,13 @@
+/* TEAM */
+  Author: Nicolas Skrzek
+  Twitter: @astraporta
+  Site: destinydev.eu
+  From: Herblay, Île-de-france, France
+
+/* SITE */
+  Last update:2019/04/25
+  Language: Frensh
+  Standards: HTML5, CSS3, PHP7
+  Framework: Laravel, Vue.js
+  Components: Axios, VeeValidate
+  IDE: Atom

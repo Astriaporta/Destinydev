@@ -1,10 +1,12 @@
 .social {
   li {
-    line-height: $size-x-large;
-    height: $size-x-large;
-    width: $size-x-large;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
     @include transition-transform($halfSecond);
-    @include rotate($northEast);
+    // @include rotate($northEast);
     @extend .d-block;
     @extend .text-center;
     @extend .bg-ice;
@@ -12,16 +14,17 @@
       @extend .shadow-light;
     }
     &:hover {
-      @include scale-rotate(1.3,1.3, $northEast);
+      // @include scale-rotate(1.3,1.3, $northEast);
+      transform: scale(1.3,1.3);
     }
   }
   a {
-    font-size: $size-base;
+    font-size: 1.2rem;
     @extend .d-block;
     @extend .text-center;
-    @include rotate($northWest);
-    @extend .width-x-large;
-    @extend .height-x-large;
+    // @include rotate($northWest);
+    // @extend .width-x-large;
+    // @extend .height-x-large;
     @extend .c-charcoal;
   }
 }

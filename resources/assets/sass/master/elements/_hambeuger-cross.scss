@@ -8,7 +8,6 @@
   width: $size-large-small;
   height: $size-large-small;
   margin-left: $size-small;
-  position: absolute;
   z-index: 100;
   //mix-blend-mode: difference;
   cursor: pointer;
@@ -30,6 +29,7 @@
   &:active {@extend .outline-none;}
   //if menu is closed
   &.is-closed {
+    position: fixed;
     &::before {
       @extend .font-size-x-small;
     }

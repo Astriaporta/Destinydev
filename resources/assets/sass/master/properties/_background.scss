@@ -15,8 +15,9 @@
 }
 .bg-home {
   background: {
-    //image: linear-gradient(to left, $php, $vuejs);
-    image: radial-gradient(circle at center, $vuejs, $php);
+    // image: radial-gradient(ellipse at center, #3f4f79 0%, #1d1d2b 100%);
+    image: radial-gradient(ellipse at center, $bleue-de-france 0%, $charcoal 100%);
+    // image: radial-gradient(circle at center, $vuejs, $php);
     //image: radial-gradient(circle at center,#045,#002);
     attachment: fixed;
   }

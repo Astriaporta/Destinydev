@@ -28,6 +28,40 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'debug_blacklist' => [
+        '_ENV' => [
+            'APP_KEY',
+            'DB_HOST',
+            'DB_PORT',
+            'DB_DATABASE',
+            'DB_USERNAME',
+            'DB_PASSWORD',
+            'REDIS_PASSWORD',
+            'MAIL_USERNAME',
+            'MAIL_PASSWORD',
+            'PUSHER_APP_KEY',
+            'PUSHER_APP_SECRET',
+            'MAIL_FROM_ADDRESS',
+        ],
+        '_SERVER' => [
+            'APP_KEY',
+            'DB_HOST',
+            'DB_PORT',
+            'DB_DATABASE',
+            'DB_USERNAME',
+            'DB_PASSWORD',
+            'REDIS_PASSWORD',
+            'MAIL_USERNAME',
+            'MAIL_PASSWORD',
+            'PUSHER_APP_KEY',
+            'PUSHER_APP_SECRET',
+            'MAIL_FROM_ADDRESS',
+        ],
+        '_POST' => [
+            'password',
+        ],
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -78,7 +112,17 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
+
+    /**
+     * List of alternative languages
+     */
+    'alt_langs' => ['en'],
+
+    /**
+     *  Prefix of selected locale  - leave empty (set in runtime)
+     */
+    'locale_prefix' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +135,20 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fr',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Faker Locale
+    |--------------------------------------------------------------------------
+    |
+    | This locale will be used by the Faker PHP library when generating fake
+    | data for your database seeds. For example, this will be used to get
+    | localized telephone numbers, street address information and more.
+    |
+    */
+
+    'faker_locale' => 'fr_FR',
 
     /*
     |--------------------------------------------------------------------------

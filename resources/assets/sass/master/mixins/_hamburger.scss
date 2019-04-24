@@ -11,10 +11,11 @@
 }
 @mixin make-hamb-button($posHamp) {
   height: 4px;
-  @extend .bg-ice;
-  @extend .width-100prc;
-  @extend .position-absolute;
-  @extend .position-left-zero;
+  background-color: #d1d1d1;
+  margin-left: .3rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
   @if $posHamp != 'middle' {
     @include transition-all-ease-in-out($halfSecond);
   }

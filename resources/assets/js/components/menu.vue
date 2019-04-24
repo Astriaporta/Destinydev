@@ -4,7 +4,7 @@
       <div class="navbar navbar-darky h-100">
         <div class="d-flex flex-column justify-content-around h-100">
           <nav class="nav nav-masthead d-flex flex-column">
-            <a v-for="item in menu" class="nav-link" :href="item.url">{{item.name}}</a>
+            <a v-for="item in menu" class="nav-link" :href="'#' + item.url">{{item.name}}</a>
           </nav>
         </div>
       </div>
@@ -25,11 +25,11 @@ export default {
     return {
       isOpen: false,
       menu: [
-        {name: 'Accueil', url: '#main'},
-        {name: 'Services', url: '#services'},
-        {name: 'propos', url: '#about'},
-        {name: 'Compétences', url: '#skills'},
-        {name: 'Contact', url: '#contact'}
+        {name: 'Accueil', url: 'top'},
+        {name: 'Services', url: 'services'},
+        {name: 'A propos', url: 'about'},
+        {name: 'Compétences', url: 'skills'},
+        {name: 'Contact', url: 'contact'}
       ]
     };
   }

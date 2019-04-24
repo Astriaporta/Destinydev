@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function store(ContactValidationRules $request)
     {
-      Mail::to(config('mail.to.address'), config('mail.to.name'))
+      Mail::to(config('mail.to.address'))
         ->send(new KryptoniteFound($request));
     }
 }

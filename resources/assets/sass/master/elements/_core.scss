@@ -11,6 +11,7 @@ html {
   padding: 0;
   width: $fullScreen;
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   @extend html;
@@ -55,7 +56,7 @@ textarea {
   resize: vertical;
 }
 p {
-  text-align: justify;
+  text-align: left;
 }
 ul {margin: 0;}
 .main-title {
@@ -64,7 +65,7 @@ ul {margin: 0;}
     top: 5rem;
     bottom: 2.5rem;
   }
-  font-size: 15vmin;
+  font-size: 10vmin;
   color: $ice;
   @extend .font-weight-bold;
 }
@@ -72,8 +73,12 @@ ul {margin: 0;}
   font-size: $size-very-x-large;
   @extend .font-weight-bold;
 }
+#services {
+  .d-flex {flex-wrap: wrap;}
+}
 .services {
-  width: 300px;
+  width: 33.33%;
+  flex: 0 0 33.33%;
   .title {
     display: inline-block;
     padding: 2rem 2rem;
@@ -82,7 +87,17 @@ ul {margin: 0;}
     color: $ice;
   }
 }
-.see-more {@extend .c-ice;}
+.see-more {
+  @extend .c-ice;
+  > i {
+    position: relative;
+    animation: up-down 1s linear infinite;
+  }
+}
+@keyframes up-down {
+  from {top: -20px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
 .header {
   &-title {
     margin-bottom: $size-large-small;
@@ -129,4 +144,8 @@ p {
 .take-contact {
   flex: 0 0 75%;
   max-width: 75%;
+}
+
+#about {
+  p {line-height: 1.5rem; margin-top: 1.5rem;}
 }

@@ -236,6 +236,9 @@ return [
 
         // HTTP/2
         \TomSchlick\ServerPush\ServiceProvider::class,
+
+        // SEO Tools
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
     ],
 
     /*
@@ -285,6 +288,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // SEO Tools
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
     ],
 
 ];

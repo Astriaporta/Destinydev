@@ -1,4 +1,5 @@
-<section id="skills" class="d-flex justify-content-center bg-ice c-charcoal">
+<section class="skills d-flex justify-content-center bg-ice c-charcoal">
+  <a name="skills"></a>
   <div class="container py-5">
     <h2>Compétences</h2>
     @foreach ($skills as $skill)

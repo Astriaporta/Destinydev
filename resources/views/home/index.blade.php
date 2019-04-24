@@ -1,4 +1,5 @@
-<section id="top" class="h-100">
+<section class="h-100">
+  <a name="top"></a>
   <div class="h-100 d-flex flex-column justify-content-between">
     <div class="h-100  d-flex flex-column justify-content-center text-center">
       <h1 class="main-title">Destinydev</h1>
@@ -6,7 +7,7 @@
         <ul class="d-flex justify-content-center mt-4 social">
           @foreach ($links as $link)
             <li class="">
-              <a href="{{ $link['url'] }}" title="{{ $link['name'] }}" target="_blank">
+              <a href="{{ $link['url'] }}" title="{{ $link['name'] }}" rel="noopener" target="_blank">
                 <i class="fab {{ $link['classfas'] }} fa-lg"></i>
               </a>
             </li>

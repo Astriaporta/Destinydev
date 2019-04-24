@@ -4,7 +4,7 @@
 
     <div class="input-group mt-4">
       <!-- <button  @click="contactMe()" :disabled="btndis" class="btn btn-white">Envoyer</button> -->
-      <dd-button @click="contactMe()" :disabled="btndis" :loading="loading">Envoyer</dd-button>
+      <dd-button @click="contactMe()" name="contact" aria-label="Envoyer" :disabled="btndis" :loading="loading">Envoyer</dd-button>
     </div>
   </div>
 </template>

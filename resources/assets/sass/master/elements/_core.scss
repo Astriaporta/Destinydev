@@ -73,18 +73,18 @@ ul {margin: 0;}
   font-size: $size-very-x-large;
   @extend .font-weight-bold;
 }
-#services {
-  .d-flex {flex-wrap: wrap;}
-}
 .services {
-  width: 33.33%;
-  flex: 0 0 33.33%;
-  .title {
-    display: inline-block;
-    padding: 2rem 2rem;
-    font-size: inherit;
-    //background-color: $bleue-de-france;
-    color: $ice;
+  .d-flex {flex-wrap: wrap;}
+  .service {
+    width: 33.33%;
+    flex: 0 0 33.33%;
+    .title {
+      display: inline-block;
+      padding: 2rem 2rem;
+      font-size: inherit;
+      //background-color: $bleue-de-france;
+      color: $ice;
+    }
   }
 }
 .see-more {
@@ -146,6 +146,6 @@ p {
   max-width: 75%;
 }
 
-#about {
+.about {
   p {line-height: 1.5rem; margin-top: 1.5rem;}
 }

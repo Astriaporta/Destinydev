@@ -1,23 +1,26 @@
 <template lang="html">
-  <section id="contact" class="d-flex justify-content-center">
+  <section class="d-flex justify-content-center">
     <div class="container py-5">
-      <h2>Contact</h2>
+      <h2><a name="contact">Contact</a></h2>
       <div>
         <div class="input-group mt-4">
           <input type="email" name="email"
            v-validate="'required|email'" data-vv-validate-on="change|blur" :data-vv-as="'Adresse mail'"
+           aria-label="Adresse mail"
            class="form-input" placeholder="Adresse mail" v-model.trim="contact.email">
            <span v-if="errors.first('email')" class="single-error">{{ errors.first('email') }}</span>
         </div>
         <div class="input-group mt-4">
           <input type="text" name="subject"
            v-validate="'required|min:4'" data-vv-validate-on="change|blur" :data-vv-as="'Sujet'"
+           aria-label="Sujet"
            class="form-input" placeholder="Sujet" v-model.trim="contact.subject">
            <span v-if="errors.first('subject')" class="single-error">{{ errors.first('subject') }}</span>
         </div>
         <div class="input-group mt-4">
           <textarea name="content"
           v-validate="'required|min:4'" data-vv-validate-on="change|blur" :data-vv-as="'Contenu'"
+          aria-label="Contenu"
           class="form-input" rows="4" maxlength="1000" placeholder="Contenu" v-model.trim="contact.content"></textarea>
           <span v-if="errors.first('content')" class="single-error">{{ errors.first('content') }}</span>
         </div>

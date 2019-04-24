@@ -234,6 +234,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // HTTP/2
+        \TomSchlick\ServerPush\ServiceProvider::class,
     ],
 
     /*

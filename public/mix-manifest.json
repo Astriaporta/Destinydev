@@ -1,6 +1,14 @@
 {
+    "/js/vue.js": "/js/vue.js",
+    "/js/vue.js.map": "/js/vue.js.map",
+    "/js/vendor.js": "/js/vendor.js",
+    "/js/vendor.js.map": "/js/vendor.js.map",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/app.js.map": "/js/app.js.map",
-    "/css/app.css.map": "/css/app.css.map"
+    "/css/app.css.map": "/css/app.css.map",
+    "/js/vee.js": "/js/vee.js",
+    "/js/vee.js.map": "/js/vee.js.map",
+    "/js/manifest.js": "/js/manifest.js",
+    "/js/manifest.js.map": "/js/manifest.js.map"
 }

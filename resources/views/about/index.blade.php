@@ -1,4 +1,5 @@
-<section id="about" class="d-flex justify-content-center">
+<section class="about d-flex justify-content-center">
+  <a name="about"></a>
   <div class="container py-5">
     <h2>A propos</h2>
     <p>Développeur web Back-end et Front-end vivant en région parisienne, je suis passionné par le web et l'apprentissage de nouvelles technologies, et la construction d'expériences conviviales pour le web.</p>

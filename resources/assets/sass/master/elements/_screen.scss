@@ -6,7 +6,7 @@
 }
 @media(max-width: 768px) {
   .main-title {font-size: 4rem;}
-  .services {
+  .service {
     width: 50%;
     flex: 0 0 50%;
   }
@@ -91,7 +91,7 @@
 
 @media(max-width: 425px) {
   .main-title {font-size: 3rem;}
-  .services {
+  .service {
     width: 100%;
     flex: 0 0 100%;
     p {text-align: center;}

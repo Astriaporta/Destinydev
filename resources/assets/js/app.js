@@ -12,8 +12,7 @@ window.Vue = require('vue');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-// import axios from 'axios'
-// import VueAxios from 'vue-axios'
+
 import VeeValidate from 'vee-validate'
 import validationMessagesEn from 'vee-validate/dist/locale/en';
 import validationMessagesFr from 'vee-validate/dist/locale/fr';

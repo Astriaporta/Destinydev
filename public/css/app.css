@@ -1156,20 +1156,20 @@ ul {
   font-size: 5rem;
 }
 
-#services .d-flex,
-#services .captcha {
+.services .d-flex,
+.services .captcha {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.services {
+.services .service {
   width: 33.33%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33%;
           flex: 0 0 33.33%;
 }
 
-.services .title {
+.services .service .title {
   display: inline-block;
   padding: 2rem 2rem;
   font-size: inherit;
@@ -1255,7 +1255,7 @@ ul {
   max-width: 75%;
 }
 
-#about p {
+.about p {
   line-height: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -1289,7 +1289,7 @@ ul {
   opacity: 1;
 }
 
-.form-input:-ms-input-placeholder {
+.form-input::-moz-placeholder {
   color: #4C5B5C;
   opacity: 1;
 }
@@ -1602,7 +1602,7 @@ ul {
     font-size: 4rem;
   }
 
-  .services {
+  .service {
     width: 50%;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -1705,14 +1705,14 @@ ul {
     font-size: 3rem;
   }
 
-  .services {
+  .service {
     width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
 
-  .services p {
+  .service p {
     text-align: center;
   }
 

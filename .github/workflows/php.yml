@@ -1,0 +1,41 @@
+name: PHP Composer
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+
+    - name: Install dependencies with autoloader optimization
+      run: composer install --prefer-dist --optimize-autoloader --no-dev --no-progress --no-suggest
+
+    - name: Install Dependencies
+      run: npm install
+    
+    - name: Build JS/CSS package in production mode
+      run: npm run prod
+      
+    - name: Create .env
+      run: cp .env.example .env
+     
+    - name: Make APP-KEY
+      run: php artisan key:generate
+      
+    - name: Optimizing configuration loading
+      run: php artisan config:cache
+      
+    - name: Optimizing routes loading
+      run: php artisan route:cache
+      
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Run test suite
+    #   run: composer run-script test

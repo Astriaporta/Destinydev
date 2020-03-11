@@ -20,7 +20,7 @@ class Socials extends Seeder
         $social->fill([
           'url' => 'https://github.com/astriaporta',
           'icon' => 'fa-github',
-          'displayed' => flase
+          'displayed' => false
           ])->save();
       }
 
@@ -44,7 +44,7 @@ class Socials extends Seeder
         $social->fill([
           'url' => 'https://twitter.com/astraporta',
           'icon' => 'fa-twitter',
-          'displayed' => flase
+          'displayed' => false
           ])->save();
       }
 

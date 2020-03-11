@@ -2,7 +2,8 @@
   <a name="top"></a>
   <div class="h-100 d-flex flex-column justify-content-between">
     <div class="h-100  d-flex flex-column justify-content-center text-center">
-      <h1 class="main-title">Destinydev</h1>
+      <h1 class="main-title">{{ config('app.name', 'Destinydev') }}</h1>
+      <h4>{{ __('title.main.sub')}}</h4>
       <div class="mb-1 mt-2 mr-3">
         <ul class="d-flex justify-content-center mt-4 social">
           @foreach ($links as $link)

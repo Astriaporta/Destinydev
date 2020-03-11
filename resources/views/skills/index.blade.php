@@ -1,7 +1,7 @@
 <section class="skills d-flex justify-content-center bg-ice c-charcoal">
   <a name="skills"></a>
   <div class="container py-5">
-    <h2>Compétences</h2>
+    <h2>{{ __('title.skills')}}</h2>
     @foreach ($skills as $skill)
       <div>
         <p>{{ $skill->name}}</p>

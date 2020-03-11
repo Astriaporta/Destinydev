@@ -1,7 +1,7 @@
 <section class="services d-flex justify-content-center bg-ice c-charcoal">
   <a name="services"></a>
   <div class="container py-5">
-    <h2>Services</h2>
+    <h2>{{ __('title.services')}}</h2>
     <div class="d-flex justify-content-around">
       @foreach ($services as $service)
         <div class="px-2 service">

@@ -17,3 +17,7 @@ php artisan storage:link
 
 npm install
 npm run production
+
+touch database/database.sqlite
+
+php artisan migrate --seed

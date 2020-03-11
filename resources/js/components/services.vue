@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section id="services" class="d-flex justify-content-center bg-ice c-charcoal">
     <div class="container py-5">
       <h2>Services</h2>

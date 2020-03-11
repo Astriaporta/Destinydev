@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section class="h-100">
     <div class="h-100 d-flex flex-column justify-content-between">
       <div class="h-100  d-flex flex-column justify-content-center text-center">

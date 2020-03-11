@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section id="skills" class="d-flex justify-content-center bg-ice c-charcoal">
     <div class="container py-5">
       <h2>Compétences</h2>

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section id="about" class="d-flex justify-content-center">
     <div class="container py-5">
       <h2>A propos</h2>

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div>
     <div class="sidenav" :class="{'is-open': isOpen}">
       <div class="navbar navbar-darky h-100">

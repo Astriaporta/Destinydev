@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div v-if="show" class="input-group mt-4">
     <my-captcha :callSuccess="enableBtn" resolve="text"></my-captcha>
 

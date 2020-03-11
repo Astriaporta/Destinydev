@@ -1,6 +1,6 @@
 @mixin colors($prop) {
   @each $color, $value in $colors {
-    &-#{$color} {#{$prop}: $value;}
+    &-#{"" + $color} {#{$prop}: $value;}
   }
 }
 @function color-level($list-color, $color-name: "bleue-de-france", $level: 0) {

@@ -68,7 +68,7 @@ $bittersweet: #FF715B;
 $bleue-de-france: #3C91E6;
 $yellow-js: #f7df1e;
 $ice: #FAFFFD;
-$grey: #E1E2E3;
+$grey-E: #E1E2E3;
 $light-grey: #F1F1F1;
 $feldgrau: #4C5B5C;
 $charcoal: #1C2222;
@@ -126,7 +126,7 @@ $colors: (
   bleue-de-france: $bleue-de-france,
   yellow-js: $yellow-js,
   ice: $ice,
-  grey: $grey,
+  grey: $grey-E,
   light-grey: $light-grey,
   feldgrau: $feldgrau,
   charcoal: $charcoal,
@@ -134,7 +134,7 @@ $colors: (
   sass: $sass,
   javascript: $javascript,
   php: $php,
-  transparent: transparent,
+  transparent: rgba(0,0,0, 0.0),
   init: inherit
 );
 $color-interval: 8%;

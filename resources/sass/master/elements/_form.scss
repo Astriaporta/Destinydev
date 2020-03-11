@@ -6,7 +6,7 @@
     color: $ice;
     clip: padding-box;
   }
-  border: 1px solid $grey;
+  border: 1px solid $grey-E;
   @include input-size($padding-input-y, $padding-input-x, $size-small, $line-height-base, $border-radius);
   @include transition($btn-transition);
 

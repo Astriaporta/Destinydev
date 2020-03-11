@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section class="d-flex justify-content-center">
     <div class="container py-5">
       <h2><a name="contact">Contact</a></h2>

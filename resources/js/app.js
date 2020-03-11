@@ -19,12 +19,6 @@ import validationMessagesFr from 'vee-validate/dist/locale/fr';
 
 import Menu from './components/menu'
 import Contact from './components/contact'
-// import Home from './components/home'
-// import About from './components/about'
-// import Services from './components/services'
-// import Skills from './components/skills'
-
-// Vue.use(VueAxios, axios);
 
 Vue.use(VeeValidate, {
   fieldsBagName: 'veeFields',
@@ -37,10 +31,8 @@ Vue.use(VeeValidate, {
 
 Vue.component('app-menu', Menu);
 Vue.component('app-contact', Contact);
-// Vue.component('app-home', Home);
-// Vue.component('app-services', Services);
-// Vue.component('app-about', About);
-// Vue.component('app-skills', Skills);
+
+Vue.prototype.trans = string => _.get(window.i18n, string);
 
 const app = new Vue({
     el: '#app'

@@ -10,22 +10,26 @@ class Social extends Model
     [
       'name' => 'Github',
       'url' => 'https://github.com/astriaporta',
-      'classfas' => 'fa-github',
+      'icon' => 'fa-github',
+      'displayed' => true
     ],
     [
       'name' => 'Twitter',
       'url' => 'https://twitter.com/astraporta',
-      'classfas' => 'fa-twitter',
+      'icon' => 'fa-twitter',
+      'displayed' => true
     ],
     [
       'name' => 'Linkedin',
       'url' => 'https://www.linkedin.com/in/nico-skr-174192b5/',
-      'classfas' => 'fa-linkedin',
+      'icon' => 'fa-linkedin',
+      'displayed' => true
     ],
     [
       'name' => 'Viadeo',
       'url' => 'http://www.viadeo.com/p/002xcj689jaoihp',
-      'classfas' => 'fa-viadeo',
+      'icon' => 'fa-viadeo',
+      'displayed' => true
     ],
   ];
 

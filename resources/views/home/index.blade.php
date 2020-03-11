@@ -6,11 +6,13 @@
       <div class="mb-1 mt-2 mr-3">
         <ul class="d-flex justify-content-center mt-4 social">
           @foreach ($links as $link)
-            <li class="">
-              <a href="{{ $link['url'] }}" title="{{ $link['name'] }}" rel="noopener" target="_blank">
-                <i class="fab {{ $link['classfas'] }} fa-lg"></i>
-              </a>
-            </li>
+            @if ($link['displayed'])
+              <li class="">
+                <a href="{{ $link['url'] }}" title="{{ $link['name'] }}" rel="noopener" target="_blank">
+                  <i class="fab {{ $link['icon'] }} fa-lg"></i>
+                </a>
+              </li>
+            @endif
           @endforeach
         </ul>
       </div>

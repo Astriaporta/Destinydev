@@ -48,6 +48,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "post-install-cmd": [
+          "chgrp -R http storage bootstrap/cache",
+          "chmod -R ug+rwx storage bootstrap/cache"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"

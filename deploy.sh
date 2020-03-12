@@ -5,8 +5,10 @@ composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scr
 
 # FIX PERMISSIONS
 chown -R root:http *;
-chmod -R 755 storage;
-chmod -R 755 bootstrap/cache/;
+find ./storage -type d -exec chmod 775 {} \;
+find ./bootstrap/cache/ -type d -exec chmod 775 {} \;
+find ./storage -type f -exec chmod 664 {} \;
+find ./bootstrap/cache/ -type f -exec chmod 664 {} \;
 
 # Copy relevent .env file depending on type of deployment
 cp .env.production .env; echo ".env.production file has been copied";

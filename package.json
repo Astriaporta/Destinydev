@@ -22,8 +22,5 @@
         "vue-axios": "^2.1.4",
         "vue-captcha": "^1.0.2",
         "vue-template-compiler": "^2.6.10"
-    },
-    "dependencies": {
-        "fs-extra": "^7.0.1"
     }
 }

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install vendors without dev in production
-composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts -o --no-dev;
+composer install --optimize-autoloader --no-dev;
 
 # FIX PERMISSIONS
 chown -R root:http *;

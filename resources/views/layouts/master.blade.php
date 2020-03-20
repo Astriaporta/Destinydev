@@ -7,7 +7,7 @@
     {!! SEO::generate(true) !!}
     <link type="text/plain" rel="author" href="humans.txt" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-     crossorigin="anonymous" async>
+     crossorigin="anonymous" async defer>
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
   </head>
   <body class="bg-home">

@@ -9,7 +9,7 @@ return [
             'title'        => "", // set false to total remove
             'description'  => 'For those who helped create the Genki Dama', // set false to total remove
             'separator'    => ' - ',
-            'keywords'     => ['developpeur web', 'développeur web', 'freelance', 'indépendant', 'independant', 'laravel', 'vuejs', 'Nicolas Skrzek'],
+            'keywords'     => [],
             'canonical'    => null, // Set null for using Url::current(), set false to total remove
             'robots'       => 'all', // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],

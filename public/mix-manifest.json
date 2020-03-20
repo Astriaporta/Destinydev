@@ -1,14 +1,8 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/js/app.js.map": "/js/app.js.map",
-    "/css/app.css.map": "/css/app.css.map",
-    "/js/manifest.js": "/js/manifest.js",
-    "/js/manifest.js.map": "/js/manifest.js.map",
-    "/js/vee.js": "/js/vee.js",
-    "/js/vee.js.map": "/js/vee.js.map",
-    "/js/vendor.js": "/js/vendor.js",
-    "/js/vendor.js.map": "/js/vendor.js.map",
-    "/js/vue.js": "/js/vue.js",
-    "/js/vue.js.map": "/js/vue.js.map"
+    "/js/app.js": "/js/app.js?id=b57567e2115f0c62124c",
+    "/css/app.css": "/css/app.css?id=2e63bd03c3dba60b42b8",
+    "/js/manifest.js": "/js/manifest.js?id=3c768977c2574a34506e",
+    "/js/vee.js": "/js/vee.js?id=b8a442b22c12c6c8a4f0",
+    "/js/vendor.js": "/js/vendor.js?id=a5832876a46a9a1fdb58",
+    "/js/vue.js": "/js/vue.js?id=6f05559cb1fc9f7b9b4d"
 }

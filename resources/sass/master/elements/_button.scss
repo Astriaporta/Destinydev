@@ -25,6 +25,10 @@
       @extend .bg-transparent;
       @extend .border-color-ice;
     }
+    &-close {
+      @extend .c-ice;
+      @extend .bg-transparent;
+    }
   }
   &.shadow-light {
     @extend .shadow-light;

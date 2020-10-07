@@ -1,3 +1,5 @@
+@include('messages.error')
+@include('messages.success')
 <section class="h-100">
   <a name="top"></a>
   <div class="h-100 d-flex flex-column justify-content-between">

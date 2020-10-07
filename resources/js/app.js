@@ -13,26 +13,28 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import VeeValidate from 'vee-validate'
-import validationMessagesEn from 'vee-validate/dist/locale/en';
-import validationMessagesFr from 'vee-validate/dist/locale/fr';
+// import VeeValidate from 'vee-validate'
+// import validationMessagesEn from 'vee-validate/dist/locale/en';
+// import validationMessagesFr from 'vee-validate/dist/locale/fr';
 
 import Menu from './components/menu'
-import Contact from './components/contact'
+import Messages from './components/messages'
+// import Contact from './components/contact'
 
-Vue.use(VeeValidate, {
-  fieldsBagName: 'veeFields',
-  locale: document.documentElement.lang,
-  dictionary: {
-    en: validationMessagesEn,
-    fr: validationMessagesFr
-  }
-});
+// Vue.use(VeeValidate, {
+//   fieldsBagName: 'veeFields',
+//   locale: document.documentElement.lang,
+//   dictionary: {
+//     en: validationMessagesEn,
+//     fr: validationMessagesFr
+//   }
+// });
 
 Vue.component('app-menu', Menu);
-Vue.component('app-contact', Contact);
+Vue.component('app-messages', Messages);
+// Vue.component('app-contact', Contact);
 
-Vue.prototype.trans = string => _.get(window.i18n, string);
+// Vue.prototype.trans = string => _.get(window.i18n, string);
 
 const app = new Vue({
     el: '#app'

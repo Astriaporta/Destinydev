@@ -2,9 +2,13 @@
   @extend .border-color-bittersweet;
 }
 .messages {
-  position: relative;
-  margin-top: $message-margin-top;
-  margin-bottom: $message-margin-bottom;
+  position: fixed;
+  // margin-top: $message-margin-top;
+  // margin-bottom: $message-margin-bottom;
+  top: 35px;
+  right: 35px;
+  min-width: 200px;
+  max-width: 400px;
   @include input-size($message-padding-y, $message-padding-x, $size-small, $line-height-base, $message-border-radius);
 
   @if $enable-shadows {
@@ -18,6 +22,18 @@
         border: 1px solid color-level($messages-list, $name, $message-border-color-level);
       }
     }
+  }
+
+  & .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: .75rem 1.25rem;
+      color: inherit;
+  }
+
+  &.hide {
+    display: none;
   }
 }
 .single-error {

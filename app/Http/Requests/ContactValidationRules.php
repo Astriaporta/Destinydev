@@ -3,8 +3,10 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
 
 // @link https://github.com/anhskohbo/no-captcha
+// @link https://dev.to/secmohammed/laravel-form-request-tips-tricks-2p12
 
 class ContactValidationRules extends FormRequest
 {
@@ -50,4 +52,11 @@ class ContactValidationRules extends FormRequest
             // 'g-recaptcha-response.captcha' => 'Captcha error! try again later or contact site admin.',
         ];
     }
+
+    /*protected function failedValidation(Validator $validator)
+    {
+        return \Redirect::to($this->getRedirectUrl() . "#contact")->with([
+            'errors' => $this->errorBag
+        ]);
+    }*/
 }

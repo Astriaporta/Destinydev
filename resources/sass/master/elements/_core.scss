@@ -70,8 +70,7 @@ ul {margin: 0;}
   @extend .font-weight-bold;
 }
 .second-title {
-  font-size: $size-very-x-large;
-  @extend .font-weight-bold;
+  font-size: $size-base;
 }
 .services {
   .d-flex {flex-wrap: wrap;}
@@ -94,6 +93,7 @@ ul {margin: 0;}
 }
 .see-more {
   @extend .c-ice;
+  font-size: 1.75rem;
   > i {
     position: relative;
     animation: up-down 1s linear infinite;

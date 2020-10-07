@@ -3,7 +3,7 @@
   <div class="h-100 d-flex flex-column justify-content-between">
     <div class="h-100  d-flex flex-column justify-content-center text-center">
       <h1 class="main-title">{{ config('app.name', 'Destinydev') }}</h1>
-      <h4>{{ __('title.main.sub')}}</h4>
+      <div class="second-title">{{ __('title.main.sub')}}</div>
       <div class="mb-1 mt-2 mr-3">
         <ul class="d-flex justify-content-center mt-4 social">
           @foreach ($links as $link)
@@ -20,11 +20,11 @@
     </div>
     <div class="text-center">
       En savoir plus
-      <h2 class="mb-2">
+      <div class="my-4">
         <a href="#services" class="see-more" aria-label="En savoir plus">
           <i class="fa fa-angle-down"></i>
         </a>
-      </h2>
+      </div>
     </div>
   </div>
 </section>

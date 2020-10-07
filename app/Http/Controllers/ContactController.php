@@ -12,7 +12,11 @@ class ContactController extends Controller
 {
     public function store(ContactValidationRules $request)
     {
-      Mail::to(config('mail.from.address'))
-        ->send(new KryptoniteFound($request));
+        Mail::to(config('mail.from.address'))
+            ->send(new KryptoniteFound($request));
+
+        return \Redirect::to(\URL::previous() . "#contact")->with([
+            'success' => __('messages.contact.success')
+        ]);
     }
 }

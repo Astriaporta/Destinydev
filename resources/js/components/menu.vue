@@ -4,7 +4,7 @@
       <div class="navbar navbar-darky h-100">
         <div class="d-flex flex-column justify-content-around h-100">
           <nav class="nav nav-masthead d-flex flex-column">
-            <a v-for="item in menu" class="nav-link" :href="'#' + item.url" :aria-label="item.label">{{item.name}}</a>
+            <a v-for="item in menu" class="nav-link" :href="'#' + item.url" :aria-label="item.label" @click="isOpen = !isOpen">{{item.name}}</a>
           </nav>
         </div>
       </div>

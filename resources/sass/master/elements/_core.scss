@@ -78,12 +78,17 @@ ul {margin: 0;}
   .service {
     width: 33.33%;
     flex: 0 0 33.33%;
+    text-align: center;
     .title {
       display: inline-block;
       padding: 2rem 2rem;
-      font-size: inherit;
-      //background-color: $bleue-de-france;
+      margin: 1rem 0;
+      font-size: 1.75rem;
       color: $ice;
+    }
+    .service-content {
+      margin-top: 0;
+      text-align: center;
     }
   }
 }

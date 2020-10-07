@@ -35,12 +35,12 @@ class KryptoniteFound extends Mailable
     public function build()
     {
       return $this->view('email.kryptonite-found')
-          ->from(config('mail.from.address'))
-          ->subject('Nouvelle demande de contact : ' . $this->who)
-          ->with([
+        ->from($this->who)
+        ->subject('Nouvelle demande de contact : ' . $this->who)
+        ->with([
             'who' => $this->who,
             'subject' => $this->sujet,
             'content' => $this->content
-          ]);
+        ]);
     }
 }

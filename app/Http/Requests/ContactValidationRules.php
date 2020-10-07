@@ -4,6 +4,8 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+// @link https://github.com/anhskohbo/no-captcha
+
 class ContactValidationRules extends FormRequest
 {
     /**
@@ -27,7 +29,8 @@ class ContactValidationRules extends FormRequest
         return [
             'email' => 'required|email|max:255',
             'subject' => 'required|string|max:255',
-            'content' => 'required|string|max:1000'
+            'content' => 'required|string|max:1000',
+            'g-recaptcha-response' => 'required|captcha'
         ];
     }
     /**
@@ -41,6 +44,10 @@ class ContactValidationRules extends FormRequest
             'email.required' => 'L\':attribute est obligatoire',
             'subject.required'  => 'Un sujet est requis',
             'content.required'  => 'Le contenu ne doit pas être vide',
+            'g-recaptcha-response.required' => "Veuillez indiquer que vous n'êtes pas un robot.",
+            'g-recaptcha-response.captcha' => "Erreur CAPTCHA! réessayez plus tard.",
+            // 'g-recaptcha-response.required' => 'Please verify that you are not a robot.',
+            // 'g-recaptcha-response.captcha' => 'Captcha error! try again later or contact site admin.',
         ];
     }
 }
